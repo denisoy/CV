@@ -1,1 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY CV</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.5;
+      background: url('background.jpg') center/cover no-repeat;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      width: 80%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .profile {
+      width: 30%;
+      position: relative;
+    }
+
+    .profile img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .profile img:hover {
+      filter: brightness(80%);
+    }
+
+    .about-me {
+      width: 65%;
+      margin-left: 5%;
+      position: relative;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+
+    .about-me section {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .education,
+    .experience,
+    .skills {
+      width: 100%;
+      box-sizing: border-box;
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      width: 80%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+
+  <header>
+    <div class="header-content">
+      <div class="profile">
+        <img src="photo.jpg" alt="Your Photo">
+      </div>
+      <div class="about-me">
+        <section class="description">
+          <style>
+            .about-me p {
+              color: #353331;
+            }
+          </style>
+          <p><b>DENYS LYTVYNENKO</b></p>
+          <style scoped>
+            p {
+              color: #ff6600;
+            }
+          </style>
+          <p>
+            Experienced and forward-thinking system administrator with a passion for IT excellence. 
+            Adept at merging development and operations through DevOps principles, 
+            I bring a rich toolkit encompassing Git, Docker, Kubernetes, monitoring tools (Grafana, ELK Stack, Zabbix), 
+            and automation platforms (Ansible, Chef, Jenkins). Proficient in cloud services (AWS, Azure, GCP), 
+            Infrastructure as Code (Terraform), network management (Cisco, Microtic), and virtualization (vSphere). 
+            My goal is to architect robust, scalable, and efficient IT infrastructures that meet the evolving needs of modern businesses.
+          </p>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <section class="info">
+    <div class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Degree in Computer Science</strong> - University, 2014</li>
+      </ul>
+      <ul>
+        <li><strong>Degree in Computer Science</strong> - College, 2010</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="experience">
+      <h2>Work Experience</h2>
+      <ul>
+        <li><strong>Developer</strong> - Free Lance, 2010</li>
+        <li>Development games for IOS, Bada OS</li>
+      </ul>
+      <ul>
+        <li><strong>Technical director</strong> - SunCom, 2013-2014</li>
+        <li>Service&Repair devices</li>
+      </ul>
+      <ul>
+        <li><strong>System Administrator</strong> - DMS, 2014-2023</li>
+        <li>Service devices, network, security</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Java</li>
+        <li>SQL</li>
+        <li>Git</li>
+        <li>Docker, Kubernates</li>
+        <li>Grafana, ELK Stack, Zabbix</li>
+        <li>Ansible, Terraform</li>
+        <li>Jenkins, CI/CD</li>
+        <li>AWS, Azure, GCP</li>
+        <li>Cisco, Microtic</li>
+        <li>vSphere, Hyper-V</li>
+        <li>English - B1</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/d%D0%B5-ltvy-03396084/" target="_blank">
+        <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png" alt="LinkedIn">
+      </a>
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100001700172189" target="_blank">
+        <img src="https://cdn1.iconfinder.com/data/icons/social-media-set-for-free/32/facebook-512.png" alt="Facebook">
+      </a>
+      <a href="https://github.com/denisoy" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      </a>
+      <a href="http://edit.toh.info" target="_blank">
+        <img src="https://www.freeiconspng.com/uploads/website-icon-8.png" alt="Site">
+      </a>
+      <a href="https://t.me/whoami2402" target="_blank">
+        <img src="https://cdn0.iconfinder.com/data/icons/tuts/256/telegram.png" alt="Telegram">
+      </a>
+      <a href="http://slack.com" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Slack_icon_2019.svg/1200px-Slack_icon_2019.svg.png" alt="Slack">
+      </a>
+      <!-- Додайте інші значки та посилання за необхідності -->
+    </div>
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <div>
+        <span>Email:</span> denisoy91@gmail.com
+      </div>
+      <div>
+        <span>Phone:</span> +38 (093) 498-90-19
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
 
