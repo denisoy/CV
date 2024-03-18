@@ -59,6 +59,7 @@ header, footer {
   width: 65%;
   margin-left: 5%;
   position: relative;
+  word-wrap: break-word;
 }
 
 section {
