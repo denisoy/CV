@@ -58,25 +58,25 @@
       overflow: hidden;
     }
 
-   .frame {
-      position: relative;
-      display: inline-block;
-      border-radius: 50%; /* Рамка у формі кола */
-      overflow: hidden; /* Обрізати зайві частини зображення */
-  }
+.frame {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%; /* Рамка у формі кола */
+  overflow: hidden; /* Обрізати зайві частини зображення */
+}
 
-  .icons {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform-origin: center;
-      transform: rotate(-45deg); /* Повернення іконок на 45 градусів */
-  }
+.icons {
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрування відносно батьківського елемента */
+}
 
   .icons img {
       width: 30px; /* Розмір іконок */
       height: 30px;
-      margin: 15px; /* Відстань від рамки фотографії */
+      margin: 0 5px; /* Відстань від рамки фотографії */
   }
 
     .profile img:hover {
@@ -293,7 +293,7 @@
         <li>Setup, maintenance, and service</li>
       </ul>
       <ul>
-        <li><strong>System Administrator in the government department</strong> - SMS, 2014-2023</li>
+        <li><strong>System Administrator in the government department</strong> - SMS of Ukraine, 2014-2023</li>
         <li>Maintenance of office equipment, network, security.</li>
       </ul>
     </div>
