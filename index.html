@@ -4,220 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MY CV</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f8f8f8;
-      color: #333;
-    }
-
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      opacity: 0.5;
-      background: url('https://github.com/denisoy/CV/blob/main/background.jpg?raw=true') center/cover no-repeat;
-    }
-
-    header, footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-      position: relative;
-      z-index: 1;
-      width: 80%;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .header-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .profile {
-      width: 30%;
-      position: relative;
-    }
-
-    .profile img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-    }
-
-    .frame {
-      position: relative;
-      display: inline-block;
-      overflow: hidden; /* Обрізати зайві частини зображення */
-    }
-
-    .icons img {
-      width: 30px; /* Нова ширина іконок */
-      height: 30px; /* Нова висота іконок */
-      margin: 0 5px; /* Відступи між іконками */
-    }
-
-    .icons {
-      position: absolute;
-      top: 50%;
-      left: calc(50% + 50px); /* Зсувати іконки праворуч від фото на 50 пікселів */
-      transform: translateY(-50%);
-    }
-
-    .icons::before {
-      content: '';
-      position: absolute;
-      width: 100px; /* Довжина лінії, яка буде слідувати за контуром фото */
-      height: 2px; /* Товщина лінії */
-      background-color: black; /* Колір лінії */
-      top: 50%;
-      left: -50px; /* Початок лінії буде на 50 пікселів ліворуч від фото */
-    }
-
-    .profile img:hover {
-      filter: brightness(80%);
-    }
-
-    .about-me {
-      width: 65%;
-      margin-left: 5%;
-      position: relative;
-    }
-
-    section {
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-      position: relative;
-      z-index: 1;
-      width: 80%;
-      margin: 0 auto;
-      margin-top: 20px;
-    }
-
-    .about-me section {
-      max-width: 800px;
-      margin: 0 auto;
-      margin-top: 10px;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    .info {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .annotation,
-    .experience,
-    .education,
-    .workplaces,
-    .skills {
-      width: 100%;
-      box-sizing: border-box;
-      background-color: #fff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-      position: relative;
-      z-index: 1;
-      width: 80%;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-    }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    .social-icons img {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="background"></div>
 
-<header>
-  <div class="header-content">
-    <div class="profile">
-      <div class="frame">
-        <img src="https://raw.githubusercontent.com/denisoy/CV/main/photo.jpg" alt="Your Photo">
+  <header>
+    <div class="header-content">
+      <div class="profile">
+        <img src="https://raw.githubusercontent.com/denisoy/CV/main/photo.jpg" alt="Photo">
       </div>
-      <div class="icons">
-        <img src="https://static-00.iconduck.com/assets.00/devops-icon-479x512-j7e5qnqy.png" alt="devops">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-test-icon-477x512-jmd3or7u.png" alt="test">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-plan-icon-477x512-b4gz98gt.png" alt="plan">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-release-icon-442x512-oq1qwd40.png" alt="release">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-build-icon-478x512-5581n0hh.png" alt="build">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-code-icon-480x512-yn0kjinf.png" alt="code">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-provision-icon-477x512-qffmcwfc.png" alt="provision">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-analyze-icon-442x512-4gh3yorl.png" alt="analyze">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-deploy-icon-480x512-qnvhyf0q.png" alt="deploy">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-monitor-icon-471x512-i7mv9l9v.png" alt="monitor">        
+      <div class="about-me">
+        <div class="icons">
+          <img src="https://static-00.iconduck.com/assets.00/devops-icon-479x512-j7e5qnqy.png" alt="devops">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-test-icon-477x512-jmd3or7u.png" alt="test">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-plan-icon-477x512-b4gz98gt.png" alt="plan">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-release-icon-442x512-oq1qwd40.png" alt="release">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-build-icon-478x512-5581n0hh.png" alt="build">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-code-icon-480x512-yn0kjinf.png" alt="code">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-provision-icon-477x512-qffmcwfc.png" alt="provision">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-analyze-icon-442x512-4gh3yorl.png" alt="analyze">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-deploy-icon-480x512-qnvhyf0q.png" alt="deploy">
+          <img src="https://static-00.iconduck.com/assets.00/systems-devops-monitor-icon-471x512-i7mv9l9v.png" alt="monitor">        
       </div>
-    </div>
-    <div class="about-me">
-      <section class="description">
-        <style>
-          .about-me p {
-            color: #353331;
-          }
-        </style>
+          <section class="description">
+          <style>
+            .about-me p {
+              color: #353331;
+            }
+          </style>          
           <p><b>DENYS LYTVYNENKO</b></p>
-          <p>Date of Birth 09th July, 1991</p>
-          <p>Mail: lytvynenko.denys.mail@gmail.com</p>		
-          <p>Phone +380934989019</p>
+          <p>Date of Birth: 09th July, 1991</p>
+          <p><img src="https://toppng.com/uploads/preview/this-free-icons-png-design-of-mail-ico-11563280528awtfvfkugq.png" alt="" width="20" height="20"> lytvynenko.denys.mail@gmail.com</p>		
+          <p><img src="https://toppng.com/uploads/preview/telephone-png-ico-11568895135zaf0wnaffk.png" alt="" width="20" height="20"> +38(093) 498 90 19</p>
           <p>Location - UKRAINE - Cherkasy</p>
           <p>Position DevOps Engineer - Junior</p>
-      </section>
+        </section>
+      </div>
+
     </div>
-  </div>
-</header>
+  </header>
 
   <section class="info">
     <div class="annotation">
