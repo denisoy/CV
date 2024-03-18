@@ -58,10 +58,26 @@
       overflow: hidden;
     }
 
-    .icons img {
-      width: 40px; /* ширина іконок */
-      height: 40px; /* висота іконок */
-    }
+   .frame {
+      position: relative;
+      display: inline-block;
+      border-radius: 50%; /* Рамка у формі кола */
+      overflow: hidden; /* Обрізати зайві частини зображення */
+  }
+
+  .icons {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: center;
+      transform: rotate(-45deg); /* Повернення іконок на 45 градусів */
+  }
+
+  .icons img {
+      width: 30px; /* Розмір іконок */
+      height: 30px;
+      margin: 15px; /* Відстань від рамки фотографії */
+  }
 
     .profile img:hover {
       filter: brightness(80%);
@@ -265,8 +281,16 @@
         <li>Development of applications and games on IOS</li>
       </ul>
       <ul>
-        <li><strong>Technical engineer of repair</strong> - SunCom, 2013-2014</li>
+        <li><strong>System administrator</strong> - ТМ "Абсолют", 2010</li>
+        <li>Setup, maintenance, and service</li>
+      </ul>
+      <ul>
+        <li><strong>Technical engineer of repair</strong> - SunCom, 2012-2013</li>
         <li>Service&Repair devices</li>
+      </ul>
+      <ul>
+        <li><strong>Service ibox terminal engineer </strong> - ТОВ "АЙТЕХКОНСАЛТ", 2013-2014</li>
+        <li>Setup, maintenance, and service</li>
       </ul>
       <ul>
         <li><strong>System Administrator in the government department</strong> - SMS, 2014-2023</li>
