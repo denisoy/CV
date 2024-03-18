@@ -61,23 +61,22 @@
     .frame {
       position: relative;
       display: inline-block;
-      border-radius: 50%; /* Рамка у формі кола */
       overflow: hidden; /* Обрізати зайві частини зображення */
     }
 
     .icons {
       position: absolute;
-      display: flex;
-      flex-direction: column;
       top: 50%;
-      left: 100%; /* Розміщення іконок праворуч від фотографії */
-      transform: translate(-50%, -50%); /* Центрування відносно батьківського елемента */
+      left: 100%; /* Починаємо з правого краю фото */
+      transform: translate(-50%, -50%); /* Центруємо відносно батьківського елемента */
+      display: flex;
+      align-items: center;
     }
 
     .icons img {
-      width: 30px;
+      width: 30px; /* Розмір іконок */
       height: 30px;
-      margin: 5px;
+      margin-right: 5px; /* Відстань між іконками */      
     }
 
     .profile img:hover {
@@ -182,7 +181,7 @@
         <img src="https://raw.githubusercontent.com/denisoy/CV/main/photo.jpg" alt="Your Photo">
       </div>
       <div class="icons">
-        <img src="https://cdn4.iconfinder.com/data/icons/technology-83/1000/agile_developer_development_software_dev_devop_devops-512.png" alt="Icon 1">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-test-icon-477x512-jmd3or7u.png" alt="">
         <img src="https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png" alt="Icon 2">
         <img src="https://static-00.iconduck.com/assets.00/docker-icon-icon-2048x1479-cres2he9.png" alt="Icon 3">
         <img src="https://static-00.iconduck.com/assets.00/kubernetes-icon-512x499-3mjeet3c.png" alt="Icon 4">
