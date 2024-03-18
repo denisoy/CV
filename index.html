@@ -67,16 +67,18 @@
     .icons {
       position: absolute;
       top: 50%;
-      left: 100%; /* Починаємо з правого краю фото */
-      transform: translate(-50%, -50%); /* Центруємо відносно батьківського елемента */
-      display: flex;
-      align-items: center;
+      left: calc(50% + 50px); /* Зсувати іконки праворуч від фото на 50 пікселів */
+      transform: translateY(-50%);
     }
 
-    .icons img {
-      width: 30px; /* Розмір іконок */
-      height: 30px;
-      margin-right: 5px; /* Відстань між іконками */      
+    .icons::before {
+      content: '';
+      position: absolute;
+      width: 100px; /* Довжина лінії, яка буде слідувати за контуром фото */
+      height: 2px; /* Товщина лінії */
+      background-color: black; /* Колір лінії */
+      top: 50%;
+      left: -50px; /* Початок лінії буде на 50 пікселів ліворуч від фото */
     }
 
     .profile img:hover {
@@ -181,11 +183,16 @@
         <img src="https://raw.githubusercontent.com/denisoy/CV/main/photo.jpg" alt="Your Photo">
       </div>
       <div class="icons">
-        <img src="https://static-00.iconduck.com/assets.00/systems-devops-test-icon-477x512-jmd3or7u.png" alt="">
-        <img src="https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png" alt="Icon 2">
-        <img src="https://static-00.iconduck.com/assets.00/docker-icon-icon-2048x1479-cres2he9.png" alt="Icon 3">
-        <img src="https://static-00.iconduck.com/assets.00/kubernetes-icon-512x499-3mjeet3c.png" alt="Icon 4">
-        <img src="https://static-00.iconduck.com/assets.00/ansible-icon-512x512-o62vjrpd.png" alt="Icon 5">
+        <img src="https://static-00.iconduck.com/assets.00/devops-icon-479x512-j7e5qnqy.png" alt="devops">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-test-icon-477x512-jmd3or7u.png" alt="test">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-plan-icon-477x512-b4gz98gt.png" alt="plan">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-release-icon-442x512-oq1qwd40.png" alt="release">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-build-icon-478x512-5581n0hh.png" alt="build">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-code-icon-480x512-yn0kjinf.png" alt="code">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-provision-icon-477x512-qffmcwfc.png" alt="provision">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-analyze-icon-442x512-4gh3yorl.png" alt="analyze">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-deploy-icon-480x512-qnvhyf0q.png" alt="deploy">
+        <img src="https://static-00.iconduck.com/assets.00/systems-devops-monitor-icon-471x512-i7mv9l9v.png" alt="monitor">        
       </div>
     </div>
     <div class="about-me">
