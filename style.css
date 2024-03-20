@@ -44,9 +44,9 @@ header, footer {
 
 .profile img {
   max-width: 50%;
-  height: auto;
+  max-height: 50%;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
